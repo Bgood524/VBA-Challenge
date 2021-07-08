@@ -1,5 +1,9 @@
 Sub Testing()
 
+   Dim ws As Worksheet
+
+For Each ws In ActiveWorkbook.Worksheets
+      
 Dim TickerCounter As Integer
 Dim TickerList As String
 Dim lastrow As Long
@@ -61,5 +65,6 @@ End If
 
 Next i
 
+Next ws
 
 End Sub
