@@ -47,5 +47,19 @@ Cells(1, 9).Value = "Ticker"
 Cells(1, 11).Value = "Percent Change"
 Cells(1, 12).Value = "Volume"
 
+For i = 2 To lastrow
+
+
+If Cells(i, 10).Value >= 0 Then
+    Cells(i, 10).Interior.ColorIndex = 4
+
+Else
+    Cells(i, 10).Interior.ColorIndex = 3
+    
+    
+End If
+
+Next i
+
 
 End Sub
